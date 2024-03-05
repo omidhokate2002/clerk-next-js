@@ -2,9 +2,9 @@
 import { useEffect } from "react";
 import Chart from "chart.js/auto";
 
-function RadarChart(): JSX.Element {
+function RadarChart() {
   useEffect(() => {
-    const ctx = document.getElementById("myChart") as HTMLCanvasElement;
+    const ctx = document.getElementById("myChart");
     if (ctx) {
       const myChart = new Chart(ctx, {
         type: "radar",
